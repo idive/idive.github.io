@@ -251,6 +251,39 @@ li.buy a:hover {
 	margin: 0;
 	padding: 10px;
 	}
+
+.big-button {
+	float: left;
+	margin: 32px 0 0 0;
+	padding: 0;
+	}
+
+.big-button li {
+	padding: 12px;
+}
+
+.big-button a, .big-button a:visited {
+	font-size: 24px;
+	color: #FFF;
+	background-color: #f27892;
+	text-decoration: none;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0;
+	padding: 10px;
+	}
+
+.big-button a:hover {
+	font-size: 24px;
+	color: #FFF;
+	background-color: #e66480;
+	text-decoration: none;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0;
+	padding: 10px;
+	}
+	
 	
 
 #home-quote {
