@@ -91,19 +91,27 @@ body {
 
 */	
 
-#home #main {
+.main-image {
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
 	background-size:cover;
-	max-height: 900px;
+	background-color: #dfdfde;
+	background-repeat: no-repeat;
+	background-position: center top;	
+}
+@media (min-width: 1500px) {
+	.main-image {
+		-webkit-background-size:contain;
+		-moz-background-size:contain;
+		background-size:contain;		
+	}
+}
+
+#home #main {
 	background-image: url('../i/idive-home.jpg');
 	}
 
 #buy #main {
-	-webkit-background-size:cover;
-	-moz-background-size:cover;
-	background-size:cover;
-	max-height: 900px;
 	background-image: url('../i/idive-buy.jpg');
 	}
 	
@@ -540,7 +548,6 @@ li.buy a:hover {
 	float: left;
 	height: 37px;
 	background-color: #dfdfde;
-	border-top: 1px solid #FFF;
 	margin: 0;
 	padding: 47px 0;
 	}
