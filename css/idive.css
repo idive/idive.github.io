@@ -114,6 +114,11 @@ body {
 #buy #main {
 	background-image: url('../i/idive-buy.jpg');
 	}
+
+#buy-embed #main {
+	background-image: url('../i/idive-buy-embed.jpg');
+	}
+
 	
 #top {
 	z-index: 100;
