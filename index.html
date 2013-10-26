@@ -14,6 +14,12 @@ title: iDive - To the depths
 		<link rel="stylesheet" href="css/idive.css" type="text/css" media="screen" />	
 		<link rel="stylesheet" href="css/videobox.css" type="text/css" media="screen" />
 	
+    <!-- Add jQuery library -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <!-- Add fancyBox -->
+    <link rel="stylesheet" href="/vendor/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/vendor/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
     	
    	 	<meta property="og:title" content="iDive"/>
    	 	<meta property="og:type" content="Product"/>
@@ -21,11 +27,6 @@ title: iDive - To the depths
     	<meta property="og:image" content="http://www.idivehousing.com/i/"/>
     	<meta property="og:site_name" content="To the Depths"/>
     	<meta property="og:description" content="-"/>
-              
-        <script type="text/javascript" src="js/mootools.js"></script>
-		<script type="text/javascript" src="js/swfobject.js"></script>
-		<script type="text/javascript" src="js/videobox.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
            
 <script type="text/javascript">
 
@@ -41,14 +42,6 @@ title: iDive - To the depths
   })();
 
 </script>   
-<script type="text/javascript">
-	var jQ = jQuery.noConflict();
-	jQ(document).ready(function(){
-		jQ('#close').click(function() {
-			jQ('.popup').hide();
-		});
-	});
-</script>     
 </head> 
 
 <body>
@@ -61,26 +54,6 @@ title: iDive - To the depths
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=265790813451462";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-
-<!--
-<div class="popup">
-	<div id="lbOverlay" style="visibility: visible; zoom: 1; opacity: 0.8; top: 0px; height: 100%;"></div>
-     <div id="scubahack" class="modal mini-container">
-     	<div class="deep-info" style="padding-top:0; width:auto;">
-           <div class="deep-no">Participate in #scubahack!</div>
-           <div class="deep-text" style="width:auto;">
-                We're hosting the world's first underwater hackathon. Join us in San Francisco from August 2nd&#8212;4th at General Assembly. 
-               <span class="deep-text-title">Register by July 31st.</span>
-         	</div>
-            <div class="clear"><br /><br /></div>
-            <ul>
- 				<li class="buy"><a href="http://eepurl.com/BJ1n9">Apply Now</a></li>
- 				<li><a id="close">Continue to iDive Home</a></li>
- 			</ul>
-     	</div>
-        </div>
-</div>
--->
 
 <div id="outer"> 
  
@@ -107,41 +80,15 @@ title: iDive - To the depths
  			
  					<div id="big-button">
  			
- 						<a href="http://vimeo.com/moogaloop.swf?clip_id=52735176" rel="vidbox 940 510">Watch it work</a>
+            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/3QQxumVwApg?autoplay=1">Watch it work</a>
  			
  					</div>
  			
  				</div>
  			
  			</div>
- 			
- 			
- 			<!--
- 			<div id="home-quote">
- 			
- 				<div class="mini-container">
- 				
- 					<div id="quote">
- 				
- 						"They took an old technology,<br /> and took it to new depths."<br />
- 						<span class="quote-small-text">- Jasdeep Garcha, founder, Bar and Bean</span>
- 				
- 					</div>
- 			
- 					<div id="diver">
- 					
- 						<img src="i/diver-dude.png" border="0"/>
- 					
- 					</div>
- 				
- 				</div>
- 			
- 			</div>
- 			-->
- 			
+ 			 			
  			{% include foot.html %}
- 			
-			
 			
  		</div>
  	
@@ -152,5 +99,19 @@ title: iDive - To the depths
 </div> 
  
 </body> 
- 
+<script>
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+</script>
 </html> 
